@@ -1,0 +1,60 @@
+:root {  --card:#e2d2d2; --accent:#4eb4cb; --muted:#021948; }
+* { box-sizing: border-box; }
+
+body {
+  background-image: url("background.jpeg"); /* replace with your image */
+  background-size: cover; /* make it cover the whole page */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* prevent tiling */
+  font-family: Arial, sans-serif;
+  color: rgb(17, 17, 17); /* text color to stand out */
+}
+
+.container {
+  width: 760px;
+  max-width:95%;
+  background: var(--card);
+  padding:20px 22px;
+  border-radius:12px;
+  box-shadow: 0 8px 24px rgba(17,24,39,0.06);
+}
+h1 { margin:0 0 12px 0; font-size:20px; }
+label { display:block; margin-top:10px; color:var(--muted); font-size:13px; }
+textarea {
+  width:100%;
+  height:120px;
+  margin-top:6px;
+  padding:10px;
+  font-family: monospace;
+  font-size:14px;
+  border-radius:8px;
+  border:1px solid #4b6580;
+  resize: vertical;
+}
+.row {
+  display:flex;
+  gap:8px;
+  align-items:center;
+  margin-top:10px;
+  flex-wrap:wrap;
+}
+select, button {
+  padding:8px 10px;
+  border-radius:8px;
+  border: none;
+  cursor:pointer;
+  font-size:14px;
+}
+button { background: var(--accent); color:rgb(18, 18, 18); }
+button#clearBtn { background:#d63b3b; }
+button#exampleBtn { background:#739bec; }
+.buttons { margin-top:12px; display:flex; gap:8px; flex-wrap:wrap; }
+pre#output {
+  margin-top:12px;
+  background:#9da0a2;
+  padding:12px;
+  border-radius:8px;
+  min-height:64px;
+  white-space:pre-wrap;
+  font-family: monospace;
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DNA / Protein Sequence Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>DNA / Protein Sequence Analyzer</h1>
+
+    <label for="dnaInput">DNA sequence:</label>
+    <textarea id="dnaInput" placeholder="Paste DNA sequence (A/T/G/C)..."></textarea>
+
+    <div class="row">
+      <label for="frameSelect">Translation frame:</label>
+      <select id="frameSelect">
+        <option value="1">Frame 1</option>
+        <option value="2">Frame 2</option>
+        <option value="3">Frame 3</option>
+      </select>
+
+      <button id="exampleBtn">Insert Example</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <div class="buttons">
+      <button id="gcBtn">GC Content</button>
+      <button id="atBtn">AT Content</button>
+      <button id="compBtn">Complement</button>
+      <button id="revCompBtn">Reverse Complement</button>
+      <button id="translateBtn">Translate → Protein</button>
+    </div>
+
+    <pre id="output" aria-live="polite"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
